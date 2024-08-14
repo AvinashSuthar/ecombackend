@@ -41,7 +41,7 @@ const loginUser = async (req, res) => {
       sameSite: 'lax',
     });
 
-    res.json({ message: 'Login successful' });
+    res.json({token: token, message: 'Login successful' });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
