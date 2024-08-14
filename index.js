@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Frontend URL
+  origin: 'https://ecommerceomninos.netlify.app/', // Frontend URL
   credentials: true, // Allow cookies to be sent
 }));
 
